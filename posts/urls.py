@@ -11,6 +11,7 @@ app_name = 'posts'
 
 router = DefaultRouter()
 router.register(r'posts', PostViewSet)
+#router.register(r'posts/<int:id>/comments/', CommentViewSet)
 
 urlpatterns = [
     path('', include(router.urls))
